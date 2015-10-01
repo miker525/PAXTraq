@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ADOModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ADOModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PAXes" EntityType="ADOModel.PAX" />
+    <EntitySet Name="Swags" EntityType="ADOModel.Swag" />
+    <AssociationSet Name="SwagPAX" Association="ADOModel.SwagPAX">
+      <End Role="Swag" EntitySet="Swags" />
+      <End Role="PAX" EntitySet="PAXes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="PAX">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" />
+    <Property Name="Year" Type="Int64" Nullable="false" />
+    <Property Name="Location" Type="String" Nullable="false" />
+    <NavigationProperty Name="Swag" Relationship="ADOModel.SwagPAX" FromRole="PAX" ToRole="Swag" />
+    <Property Name="SwagId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Swag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="String" Nullable="false" />
+    <Property Name="SwagYear" Type="Int64" Nullable="false" />
+    <Property Name="Company" Type="String" Nullable="false" />
+    <Property Name="Game" Type="String" Nullable="false" />
+    <Property Name="SwagType" Type="String" Nullable="false" />
+    <Property Name="Method" Type="String" Nullable="false" />
+    <NavigationProperty Name="PAXes" Relationship="ADOModel.SwagPAX" FromRole="Swag" ToRole="PAX" />
+  </EntityType>
+  <Association Name="SwagPAX">
+    <End Type="ADOModel.Swag" Role="Swag" Multiplicity="1" />
+    <End Type="ADOModel.PAX" Role="PAX" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Swag">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PAX">
+        <PropertyRef Name="SwagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

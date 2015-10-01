@@ -1,0 +1,15 @@
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\BusinessLogic.xml
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\Entity.dll
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\Entity.pdb
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\Entity.xml
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\obj\Debug\BusinessLogic.vbprojResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\obj\Debug\BusinessLogic.Resources.resources
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\obj\Debug\BusinessLogic.vbproj.GenerateResource.Cache
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\obj\Debug\BusinessLogic.xml
+C:\Users\Mike\Documents\Visual Studio 2013\Projects\PAXTraq\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Mike\documents\visual studio 2013\Projects\PAXTraq\BusinessLogic\bin\Debug\Elmah.dll

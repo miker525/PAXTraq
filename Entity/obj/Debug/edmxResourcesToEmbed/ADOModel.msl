@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ADOModelStoreContainer" CdmEntityContainer="ADOModelContainer">
+    <EntitySetMapping Name="PAXes">
+      <EntityTypeMapping TypeName="IsTypeOf(ADOModel.PAX)">
+        <MappingFragment StoreEntitySet="PAXes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="SwagId" ColumnName="SwagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Swags">
+      <EntityTypeMapping TypeName="IsTypeOf(ADOModel.Swag)">
+        <MappingFragment StoreEntitySet="Swags">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="SwagYear" ColumnName="SwagYear" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Game" ColumnName="Game" />
+          <ScalarProperty Name="SwagType" ColumnName="SwagType" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

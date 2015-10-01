@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="PAXTraq.ptraq" CodeBehind="ptraq.svc.vb" %>

@@ -1,0 +1,154 @@
+﻿
+body {
+	margin: 0;
+	padding: 0;
+	color: #75859c;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.7em; 
+	background-color: #babcbe;
+	background-position: top center;
+	background-repeat: no-repeat
+}
+a, a:link, a:visited { 
+	color: #bac4d3; 
+	font-weight: 700; 
+	text-decoration: none; 
+	font-size: 11px; 
+}
+a:hover { 
+	text-decoration: underline;
+	font-weight: bold;
+	color: #009ddc; 
+}
+/* Header information */
+#site_title { 
+	clear: both; 
+	height: 150px;
+	background-color: #e20000  
+}
+#site_title img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Header Menu */
+#headmenu { 
+	clear: both; 
+	height: 50px; 
+	background-position: left;
+	padding: 0 10px; 
+	background-color: #e20000 
+}
+
+#headmenu ul { 
+	width: 960px; 
+	padding: 0; 
+	margin: 0 auto; 
+	list-style: none; 
+}
+
+#headmenu ul li { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#headmenu ul li a {
+	float: left;
+	display: block;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #babcbe;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+}
+
+#headmenu ul li a:hover {
+	color: #009ddc;
+	background: url(../images/mnuhover.png)
+} 
+/* Content information */
+/* Upcoming Events - Future PAX Countdown page */
+#futurepaxleft {
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+#futurepaxright {
+    display: block;
+    float: right;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+/* About/Contact page information */
+#about {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: #75859c;
+}
+#about a:link, a:visited {
+    color: #75859c;
+}
+#about a:hover{
+    color: #009ddc;
+}
+#about #header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+#about label {
+    width:140px;
+    display:block;
+}
+#about input{
+  width:500px;
+}
+#about textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#boop{
+    line-height: 20px;
+	font-size: 11px;
+    text-align: left; width: 50%; margin: auto;
+}
+#content1 {
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+#content2 {
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 32px;
+}
+/* Footer information */
+#footer {
+	clear: both;
+	padding: 0 20px 20px;
+	text-align: center;
+	color: #babcbe;
+	background-color: #e20000;
+}
+
+
+
+
+
+

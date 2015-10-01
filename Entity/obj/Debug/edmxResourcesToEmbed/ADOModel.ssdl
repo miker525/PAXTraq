@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ADOModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ADOModelStoreContainer">
+    <EntitySet Name="PAXes" EntityType="ADOModel.Store.PAXes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Swags" EntityType="ADOModel.Store.Swags" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="SwagPAX" Association="ADOModel.Store.SwagPAX">
+      <End Role="Swag" EntitySet="Swags" />
+      <End Role="PAX" EntitySet="PAXes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="PAXes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Year" Type="bigint" Nullable="false" />
+    <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SwagId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Swags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SwagYear" Type="bigint" Nullable="false" />
+    <Property Name="Company" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Game" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SwagType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Method" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="SwagPAX">
+    <End Role="Swag" Type="ADOModel.Store.Swags" Multiplicity="1" />
+    <End Role="PAX" Type="ADOModel.Store.PAXes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Swag">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PAX">
+        <PropertyRef Name="SwagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
